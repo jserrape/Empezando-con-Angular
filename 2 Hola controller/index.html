@@ -8,5 +8,11 @@
   </head>
   <body ng-controller="FirstController">
     {{"Hola " + nombre}}
+    <h2>Lista de comentarios</h2>
+    <ul>
+      <li ng-repeat="comentario in comentarios">
+        {{comentario.comentario}} - <strong>{{comentario.usuario}}</strong>
+      </li>
+    </ul>
   </body>
 </html>
